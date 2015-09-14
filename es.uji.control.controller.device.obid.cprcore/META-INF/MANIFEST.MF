@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Cprcore
+Bundle-SymbolicName: es.uji.control.controller.device.obid.cprcore
+Bundle-Version: 1.0.0
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: de.feig;version="4.5.4",
+ de.feig.ReaderConfig;version="4.5.4",
+ es.uji.control.controller.core.service;version="1.0.0",
+ es.uji.control.controller.mifare;version="1.0.0"
+Export-Package: es.uji.control.controller.device.obid.cprcore;version="1.0.0",
+ es.uji.control.controller.device.obid.cprcore.profile;version="1.0.0"
+Require-Bundle: org.eclipse.osgi;bundle-version="3.9.1"

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="startup" deactivate="shutdown" immediate="true" name="es.uji.control.controller.device.obid.cpr5010Eth.conf">
+   <implementation class="es.uji.control.controller.device.obid.cpr5010eth.internal.ConfigComponent"/>
+   <service>
+      <provide interface="es.uji.control.controller.device.obid.cpr5010eth.ICPR5010Eth"/>
+   </service>
+   <reference bind="setFactory" cardinality="1..1" interface="org.osgi.service.component.ComponentFactory" name="ComponentFactory" policy="static" target="(component.factory=es.uji.control.controller.device.obid.cpr5010eth.ICPR5010Eth)"/>
+</scr:component>

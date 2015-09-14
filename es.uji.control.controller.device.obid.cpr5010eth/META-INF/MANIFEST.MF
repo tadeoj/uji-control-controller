@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Cpr5010eth
+Bundle-SymbolicName: es.uji.control.controller.device.obid.cpr5010eth
+Bundle-Version: 1.0.0
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: de.feig;version="4.5.4",
+ es.uji.control.controller.core.service;version="1.0.0",
+ es.uji.control.controller.core.util;version="1.0.0",
+ es.uji.control.controller.device.obid.cprcore;version="1.0.0",
+ es.uji.control.controller.device.obid.cprcore.profile;version="1.0.0",
+ es.uji.control.controller.mifare;version="1.0.0"
+Service-Component: OSGI-INF/config.xml, OSGI-INF/controllerETH.xml
+Export-Package: es.uji.control.controller.device.obid.cpr5010eth
+Require-Bundle: org.eclipse.osgi;bundle-version="3.9.1",
+ org.eclipse.osgi.services;bundle-version="3.3.100"

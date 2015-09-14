@@ -1,0 +1,7 @@
+
+* Al leer el numero de serie de la ISO Table, funcionan correctamente las lecturas de byte[] y Strign pero no Long.
+* La lectura del campo TR_INFO los bits que se activan no tienen sentido segun la documentacion.
+* El inventory retorna 8 bytes (BE) para un numero de serie que en realidad esta compuesto de 4 bytes
+  y en las sicesivas llamadas (SELECT) hay que arrastrar siempre los 8 bytes por que de no ser asi no funciona.
+  Ademas TR_INFo + OPT_INFO no tienen sentido.... 
+  

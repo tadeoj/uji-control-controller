@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="startup" deactivate="shutdown" factory="es.uji.control.controller.device.obid.cpr5010eth.ICPR5010Eth" modified="update" name="es.uji.control.controller.device.obid.cpr5010Eth.comp">
+   <implementation class="es.uji.control.controller.device.obid.cpr5010eth.internal.ControllerComponent"/>
+   <service>
+      <provide interface="es.uji.control.controller.core.service.ControllerService"/>
+   </service>
+</scr:component>
